@@ -1,0 +1,1966 @@
+{
+  "name": "Final Social Auto",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0",
+          "mode": "list",
+          "cachedResultName": "Social Media",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Content_Database",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {
+            "creator": "={{ $json.creator }}",
+            "title": "={{ $json.title }}",
+            "link": "={{ $json.link }}",
+            "pubDate": "={{ $json.pubDate }}",
+            "content:encoded": "={{ $json['content:encoded'] }}",
+            "content:encodedSnippet": "={{ $json['content:encodedSnippet'] }}",
+            "dc:creator": "={{ $json['dc:creator'] }}",
+            "content": "={{ $json.content }}",
+            "contentSnippet": "={{ $json.contentSnippet }}",
+            "guid": "={{ $json.guid }}",
+            "categories": "={{ $json.categories }}",
+            "isoDate": "={{ $json.isoDate }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "creator",
+              "displayName": "creator",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "title",
+              "displayName": "title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "link",
+              "displayName": "link",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pubDate",
+              "displayName": "pubDate",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "content:encoded",
+              "displayName": "content:encoded",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "content:encodedSnippet",
+              "displayName": "content:encodedSnippet",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "dc:creator",
+              "displayName": "dc:creator",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "content",
+              "displayName": "content",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "contentSnippet",
+              "displayName": "contentSnippet",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "guid",
+              "displayName": "guid",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "categories",
+              "displayName": "categories",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "isoDate",
+              "displayName": "isoDate",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Content_Approval_Status",
+              "displayName": "Content_Approval_Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Instagram_Caption",
+              "displayName": "Instagram_Caption",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Twitter_Caption",
+              "displayName": "Twitter_Caption",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "LinkedIn_Caption",
+              "displayName": "LinkedIn_Caption",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Reddit_Caption",
+              "displayName": "Reddit_Caption",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Image1_URL",
+              "displayName": "Image1_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Image2_URL",
+              "displayName": "Image2_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Image3_URL",
+              "displayName": "Image3_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Image4_URL",
+              "displayName": "Image4_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Image5_URL",
+              "displayName": "Image5_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "id": "3a325cf5-7122-41bd-b089-a1c60eaf3617",
+      "name": "Write New Content to Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4,
+      "position": [
+        1940,
+        -580
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "oEBESEZvHZPoRCqI",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "openAiApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"gpt-4\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are an elite content strategist combining Apple's design philosophy with Y Combinator's startup expertise. Create premium, professional content that reflects Silicon Valley's highest standards. Your captions should be insightful, data-driven, and visually compelling. Focus on practical implications, market impact, and future trends.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Create premium social media content for:\\nTitle: {{$json.title}}\\nContent: {{$json['content:encoded']}}\\nLink: {{$json.link}}\\n\\nGenerate:\\n1. Title: Keep original article title\\n2. Instagram: Thought-provoking caption with key insights, relevant emojis, strategic hashtags (150 words max). Focus on 'why this matters now'\\n3. Twitter: Punchy, quotable insight with 2-3 strategic hashtags (280 chars max)\\n4. LinkedIn: Executive-level analysis with business implications, market context, and actionable takeaways (300 words max)\\n5. Reddit: Discussion-starter with technical depth, asking thought-provoking questions\\n6. Image prompts: 5 photorealistic DALL-E prompts featuring:\\n   - Clean, minimalist Apple-inspired design aesthetics\\n   - Professional tech environments (modern offices, labs, conferences)\\n   - Realistic people using technology in natural settings\\n   - Data visualizations, charts, and infographics in the style of top-tier consulting firms\\n   - Product shots and interface mockups with premium lighting\\n   - Each prompt should be 40+ words, highly detailed, specifying lighting, composition, and style\\n\\nReturn as JSON: {\\\"title\\\": \\\"article title\\\", \\\"instagram\\\": \\\"caption\\\", \\\"twitter\\\": \\\"caption\\\", \\\"linkedin\\\": \\\"caption\\\", \\\"reddit\\\": \\\"caption\\\", \\\"image_prompts\\\": [\\\"detailed prompt 1\\\", \\\"detailed prompt 2\\\", \\\"detailed prompt 3\\\", \\\"detailed prompt 4\\\", \\\"detailed prompt 5\\\"]}\"\n    }\n  ],\n  \"temperature\": 0.3\n}\n",
+        "options": {}
+      },
+      "id": "815d6ff4-90c4-45de-a6d8-9e7ebaa4986c",
+      "name": "Generate AI Captions & Image Prompts",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        0,
+        320
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": "dNqR2c1QuYsRZgdz",
+          "name": "Vanshika Eurus"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/images/generations",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "openAiApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"dall-e-3\",\n  \"prompt\": \"{{ $json.image_prompts[0] }}\",\n  \"n\": 1,\n  \"size\": \"1024x1024\",\n  \"response_format\": \"url\"\n}",
+        "options": {}
+      },
+      "id": "e3bfe2cb-a84d-4b93-9a87-d5c1a6cab950",
+      "name": "Generate Image 1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        500,
+        80
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": "yZmPkU5wBUyz31iK",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/images/generations",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "openAiApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"dall-e-3\",\n  \"prompt\": \"{{ $json.image_prompts[1] }}\",\n  \"n\": 1,\n  \"size\": \"1024x1024\",\n  \"response_format\": \"url\"\n}",
+        "options": {}
+      },
+      "id": "e3167d89-3644-4300-a30d-5aecdd8210f5",
+      "name": "Generate Image 2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        500,
+        240
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": "yZmPkU5wBUyz31iK",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/images/generations",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "openAiApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"dall-e-3\",\n  \"prompt\": \"{{ $json.image_prompts[2] }}\",\n  \"n\": 1,\n  \"size\": \"1024x1024\",\n  \"response_format\": \"url\"\n}",
+        "options": {}
+      },
+      "id": "495a0b6d-0921-450e-a5dd-175db685ae18",
+      "name": "Generate Image 3",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        500,
+        380
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": "yZmPkU5wBUyz31iK",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/images/generations",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "openAiApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"dall-e-3\",\n  \"prompt\": \"{{ $json.image_prompts[3] }}\",\n  \"n\": 1,\n  \"size\": \"1024x1024\",\n  \"response_format\": \"url\"\n}",
+        "options": {}
+      },
+      "id": "a2cc2e2e-e5c7-4a9a-8a1c-4c453fa4edff",
+      "name": "Generate Image 4",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        500,
+        520
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": "yZmPkU5wBUyz31iK",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/images/generations",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "openAiApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"dall-e-3\",\n  \"prompt\": \"{{ $json.image_prompts[4] }}\",\n  \"n\": 1,\n  \"size\": \"1024x1024\",\n  \"response_format\": \"url\"\n}",
+        "options": {}
+      },
+      "id": "c524fddd-3f3d-44d1-bd3e-35df90c44d5e",
+      "name": "Generate Image 5",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        500,
+        680
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": "yZmPkU5wBUyz31iK",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "37747e7f-586f-4a39-9eb7-c4cc5a653fd2",
+      "name": "Merge Generated Images",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 2.1,
+      "position": [
+        760,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Captions and prompts from the first input\nconst captions = items[0].json;\n\n// Images from the rest of the inputs\nconst imageUrls = items.slice(1).map(item => item.json.data[0].url);\n\n// Build the final object\nreturn [{\n  json: {\n    Instagram_Caption:$input.first().json.Instagram_Caption ,\n    Twitter_Caption: $input.first().json.Twitter_Caption,\n    LinkedIn_Caption: $input.first().json.LinkedIn_Caption,\n    Reddit_Caption: $input.first().json.Reddit_Caption,\n    Image1_URL: $('Generate Image 1').first().json.data[0].url|| '',\n    Image2_URL:$('Generate Image 2').first().json.data[0].url  || '',\n    Image3_URL: $('Generate Image 3').first().json.data[0].url|| '',\n    Image4_URL: $('Generate Image 4').first().json.data[0].url || '',\n    Image5_URL: $('Generate Image 5').first().json.data[0].url|| '',\n    Content_Approval_Status: 'Pending'\n  }\n}];"
+      },
+      "id": "ab8a9159-82c7-44cc-82ee-241d74b5db8e",
+      "name": "Combine Content & Images",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        960,
+        420
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0",
+          "mode": "list",
+          "cachedResultName": "Social Media",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Content_Database",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {
+            "Instagram_Caption": "={{ $json.Instagram_Caption }}",
+            "Twitter_Caption": "={{ $json.Twitter_Caption }}",
+            "LinkedIn_Caption": "={{ $json.LinkedIn_Caption }}",
+            "Reddit_Caption": "={{ $json.Reddit_Caption }}",
+            "Image1_URL": "={{ $json.Image1_URL }}",
+            "Image2_URL": "={{ $json.Image2_URL }}",
+            "Image3_URL": "={{ $json.Image3_URL }}",
+            "Image4_URL": "={{ $json.Image4_URL }}",
+            "Image5_URL": "={{ $json.Image5_URL }}",
+            "Content_Approval_Status": "={{ $json.Content_Approval_Status }}"
+          },
+          "matchingColumns": [
+            "Title"
+          ],
+          "schema": [
+            {
+              "id": "Instagram_Caption",
+              "displayName": "Instagram_Caption",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Twitter_Caption",
+              "displayName": "Twitter_Caption",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "LinkedIn_Caption",
+              "displayName": "LinkedIn_Caption",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Reddit_Caption",
+              "displayName": "Reddit_Caption",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Image1_URL",
+              "displayName": "Image1_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Image2_URL",
+              "displayName": "Image2_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Image3_URL",
+              "displayName": "Image3_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Image4_URL",
+              "displayName": "Image4_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Image5_URL",
+              "displayName": "Image5_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Content_Approval_Status",
+              "displayName": "Content_Approval_Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Facebook_Caption",
+              "displayName": "Facebook_Caption",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Pinterest_Caption",
+              "displayName": "Pinterest_Caption",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "id": "1f263494-b240-4278-b501-664b742b744c",
+      "name": "Update Sheet with Content & Images",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4,
+      "position": [
+        1160,
+        420
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "oEBESEZvHZPoRCqI",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "documentId": {
+          "__rl": true,
+          "value": "1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0",
+          "mode": "list",
+          "cachedResultName": "Social Media",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 990562262,
+          "mode": "list",
+          "cachedResultName": "Sheet2",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0/edit#gid=990562262"
+        },
+        "event": "rowUpdate",
+        "options": {}
+      },
+      "id": "f6eb6921-21db-472e-ad06-def99c5afc8a",
+      "name": "Final Content Approval Trigger",
+      "type": "n8n-nodes-base.googleSheetsTrigger",
+      "typeVersion": 1,
+      "position": [
+        -220,
+        1280
+      ],
+      "credentials": {
+        "googleSheetsTriggerOAuth2Api": {
+          "id": "yZiIwXVyDwzQlXKM",
+          "name": "Google Sheets Trigger account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "47429a02-4f47-4b2a-b52f-882c3dfbe849",
+      "name": "Format RSS Data2",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.2,
+      "position": [
+        1500,
+        -540
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0",
+          "mode": "list",
+          "cachedResultName": "Social Media",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "creator",
+              "displayName": "creator",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "title",
+              "displayName": "title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "link",
+              "displayName": "link",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "pubDate",
+              "displayName": "pubDate",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "content:encoded",
+              "displayName": "content:encoded",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "content:encodedSnippet",
+              "displayName": "content:encodedSnippet",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "dc:creator",
+              "displayName": "dc:creator",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "content",
+              "displayName": "content",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "contentSnippet",
+              "displayName": "contentSnippet",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "guid",
+              "displayName": "guid",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "categories",
+              "displayName": "categories",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "isoDate",
+              "displayName": "isoDate",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Content_Approval_Status",
+              "displayName": "Content_Approval_Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Instagram_Caption",
+              "displayName": "Instagram_Caption",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Twitter_Caption",
+              "displayName": "Twitter_Caption",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "LinkedIn_Caption",
+              "displayName": "LinkedIn_Caption",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Reddit_Caption",
+              "displayName": "Reddit_Caption",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Image1_URL",
+              "displayName": "Image1_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Image2_URL",
+              "displayName": "Image2_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Image3_URL",
+              "displayName": "Image3_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Image4_URL",
+              "displayName": "Image4_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Image5_URL",
+              "displayName": "Image5_URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "id": "3cd8a7b1-7683-407c-a4fb-ad5bed4a1089",
+      "name": "Read Existing Content2",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4,
+      "position": [
+        1720,
+        -600
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "oEBESEZvHZPoRCqI",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "documentId": {
+          "__rl": true,
+          "value": "1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0",
+          "mode": "list",
+          "cachedResultName": "Social Media",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Content_Database",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0/edit#gid=0"
+        },
+        "event": "rowUpdate",
+        "options": {}
+      },
+      "id": "23a474f6-d01c-46aa-b16a-66e5feb73ba5",
+      "name": "Content Approval Trigger1",
+      "type": "n8n-nodes-base.googleSheetsTrigger",
+      "typeVersion": 1,
+      "position": [
+        -340,
+        320
+      ],
+      "credentials": {
+        "googleSheetsTriggerOAuth2Api": {
+          "id": "yZiIwXVyDwzQlXKM",
+          "name": "Google Sheets Trigger account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const response = JSON.parse($json.choices[0].message.content);\nconst rowData = $input.first().json;\nreturn [{\n  json: {\n    ...rowData,\n    Instagram_Caption: response.instagram,\n    Twitter_Caption: response.twitter,\n    LinkedIn_Caption: response.linkedin,\n    Reddit_Caption: response.reddit,\n    image_prompts: response.image_prompts\n  }\n}];"
+      },
+      "id": "8f003d40-b1e7-423e-869e-8cd0c6fef3d3",
+      "name": "Parse AI Response1",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        280,
+        320
+      ]
+    },
+    {
+      "parameters": {
+        "text": "={{ $json.Twitter_Caption }}",
+        "additionalFields": {}
+      },
+      "id": "b008c3ec-8037-4f81-878a-c8a3938cb982",
+      "name": "Post to Twitter1",
+      "type": "n8n-nodes-base.twitter",
+      "typeVersion": 2,
+      "position": [
+        440,
+        1120
+      ],
+      "credentials": {
+        "twitterOAuth2Api": {
+          "id": "s8CddlMoLgRZQTTr",
+          "name": "X account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "aryan@euruslabs.com, aarsh@euruslabs.com, rakheja@euruslabs.com",
+        "subject": "✅ Content & Carousel Successfully Published",
+        "message": "🎉 Success! Your content and image carousel have been published across all platforms!\n\nTitle: {{ $json.Title }}\nPlatforms: Instagram (carousel), Twitter, LinkedIn, Reddit\nPublished: {{ $now.format('YYYY-MM-DD HH:mm:ss') }}\n\nCarousel Images:\n1. {{ $json.Image1_URL }}\n2. {{ $json.Image2_URL }}\n3. {{ $json.Image3_URL }}\n4. {{ $json.Image4_URL }}\n5. {{ $json.Image5_URL }}",
+        "options": {}
+      },
+      "id": "b735fa56-5857-4e60-9f44-3a712b18200b",
+      "name": "Final Success Email1",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        1100,
+        1340
+      ],
+      "webhookId": "29256c6f-98f3-473a-90cb-2152d235ca5c",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "W6sLawOEET9wYYoc",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "subreddit": "r/MachineLearning r/ArtificialInteligence r/OpenAI r/ChatGPT r/GPT3 r/DeepLearning r/DataIsBeautiful (for interesting data visualizations, stats) r/Futurology (for AI impact/future-focused posts) r/technology r/programming r/learnmachinelearning r/SideProject (for showcasing projects) r/startups r/Entrepreneur r/saas r/InternetIsBeautiful (if your tool is free or has a cool public UI) r/Productivity r/automation r/n8n_io (specific for n8n workflows) r/coolgithubprojects (if your project is open source) r/webdev r/growthhacking (for GTM learnings) r/datascience r/digitalmarketing ",
+        "title": "={{ $json.Twitter_Caption }}",
+        "text": "={{ $json.Reddit_Caption }}"
+      },
+      "id": "92ad7090-9a69-4eb4-afea-38af71229910",
+      "name": "Post to Reddit1",
+      "type": "n8n-nodes-base.reddit",
+      "typeVersion": 1,
+      "position": [
+        440,
+        1640
+      ],
+      "credentials": {
+        "redditOAuth2Api": {
+          "id": "fhMcJu7wYq6Lmcb1",
+          "name": "Reddit account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "postAs": "organization",
+        "organization": "107926312",
+        "text": "={{ $json.LinkedIn_Caption }}",
+        "additionalFields": {}
+      },
+      "id": "3b659350-c9c8-4e9b-9248-1dd3748e324d",
+      "name": "Post to LinkedIn1",
+      "type": "n8n-nodes-base.linkedIn",
+      "typeVersion": 1,
+      "position": [
+        440,
+        1280
+      ],
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "r3oPoMq6HHshJtz9",
+          "name": "LinkedIn account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "vanshika@euruslabs.com, aryan@euruslabs.com, rakheja@euruslabs.com, aarsh@euruslabs.com",
+        "subject": "🔔 New AI Content Items Ready for Review",
+        "emailType": "text",
+        "message": "Hi,  New content items have been added for review.  Please review and approve or deny them here: https://docs.google.com/spreadsheets/d/1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0/edit?usp=sharing  Thank you!",
+        "options": {}
+      },
+      "id": "06452ef1-b409-430e-8873-c5c138d49af5",
+      "name": "Send Review Notification Email",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        2200,
+        -560
+      ],
+      "webhookId": "73e16af2-50e5-4c8e-b600-a22e8a385e61",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "W6sLawOEET9wYYoc",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "numberInputs": 10
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        940,
+        -560
+      ],
+      "id": "1f4e57d4-592b-4b6d-bec7-6dcf2bd4fcde",
+      "name": "Merge1"
+    },
+    {
+      "parameters": {
+        "url": "https://rss.arxiv.org/rss/cs.AI+cs.LG+cs.CV+cs.CL+cs.NE+stat.ML",
+        "options": {
+          "ignoreSSL": false
+        }
+      },
+      "name": "Arvix AI RSS",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [
+        20,
+        -440
+      ],
+      "id": "60c1f189-a047-4ee7-9616-891ddb6a8715"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 6
+            }
+          ]
+        }
+      },
+      "id": "3aabd3ef-fd78-4e33-b19a-3b9fcde8b005",
+      "name": "Schedule Trigger - Every 6 Hours1",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -340,
+        -380
+      ]
+    },
+    {
+      "parameters": {
+        "url": "http://export.arxiv.org/rss/cs.AI",
+        "options": {}
+      },
+      "id": "1432ceaa-0e57-4047-84bc-b69537b58815",
+      "name": "arXiv AI RSS2",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [
+        20,
+        -520
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "options": {}
+      },
+      "id": "a824334b-2b74-4db7-b266-54e4b78a1eb6",
+      "name": "TechCrunch AI RSS2",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [
+        20,
+        -600
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
+        "options": {}
+      },
+      "id": "2e5e18d1-8356-4721-860a-30529e8955b4",
+      "name": "MIT Tech Review RSS2",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [
+        20,
+        -680
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://bair.berkeley.edu/blog/feed.xml",
+        "options": {
+          "ignoreSSL": false
+        }
+      },
+      "id": "c5b231a5-b45e-4d3a-8f80-1da2554f4965",
+      "name": "BAIR Blog RSS2",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [
+        20,
+        -740
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "4b8ddddd-7f1a-4db3-a4cf-4a6ce50ca09d",
+              "leftValue": "={{ $json.isoDate }}",
+              "rightValue": "={{ $now.minus({ days: 7 }).toISO() }}\n",
+              "operator": {
+                "type": "dateTime",
+                "operation": "after"
+              }
+            },
+            {
+              "id": "12c1a5ee-fb3c-4ba6-9f81-2cf37689f3e8",
+              "leftValue": "",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "name": "Filter Last 24 Hours1",
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2,
+      "position": [
+        1240,
+        -460
+      ],
+      "id": "b9137d76-f535-4238-b5f4-5143e6210280"
+    },
+    {
+      "parameters": {
+        "sendTo": "vanshika@euruslabs.com, aryan@euruslabs.com, rakheja@euruslabs.com, aarsh@euruslabs.com",
+        "subject": "🎨 AI Content & Images Ready for Final Review",
+        "emailType": "text",
+        "message": "Hi! AI-generated content and carousel images are ready for your final review.\n\nContent: {{ $json.Title }}\nSource: {{ $json.Source }}\n\nGenerated:\n✅ Social media captions for all platforms\n✅ 5 carousel images\n\nPlease review everything in your Google Sheet and change Content_Approval_Status to 'Approved' to publish across all platforms.\n\nImage URLs:\n{{ $json.Image1_URL }}\n{{ $json.Image2_URL }}\n{{ $json.Image3_URL }}\n{{ $json.Image4_URL }}\n{{ $json.Image5_URL }}",
+        "options": {}
+      },
+      "id": "02916ad6-e66b-4f2d-8416-df7d43f45ba8",
+      "name": "Send Content Review Email1",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        1380,
+        420
+      ],
+      "webhookId": "c8bbddee-eb3e-4281-a340-c1ccabd2901c",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "W6sLawOEET9wYYoc",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://towardsdatascience.com/feed",
+        "options": {}
+      },
+      "name": "Towards Data Science RSS",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [
+        260,
+        -680
+      ],
+      "id": "57f784a2-eb36-4578-a19d-3d8b2a0423be"
+    },
+    {
+      "parameters": {
+        "url": "https://machinelearningmastery.com/blog/feed/",
+        "options": {}
+      },
+      "name": "ML Mastery RSS",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [
+        260,
+        -600
+      ],
+      "id": "946647d7-3f80-425b-937f-43a3c8d09348"
+    },
+    {
+      "parameters": {
+        "url": "https://openai.com/research/rss/",
+        "options": {}
+      },
+      "name": "OpenAI Research RSS",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [
+        260,
+        -440
+      ],
+      "id": "a751ea8b-fc06-4cc4-b10f-1dd693741aaa"
+    },
+    {
+      "parameters": {
+        "url": "https://www.kdnuggets.com/feed",
+        "options": {}
+      },
+      "name": "KDnuggets RSS",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [
+        260,
+        -380
+      ],
+      "id": "b5466fd6-dd5c-4790-a490-16f0820476bd"
+    },
+    {
+      "parameters": {
+        "url": "https://www.analyticsvidhya.com/blog/feed/",
+        "options": {}
+      },
+      "name": "Analytics Vidhya RSS",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [
+        260,
+        -280
+      ],
+      "id": "aa0ddbad-9c40-4ee4-be9b-312a03bf549c"
+    },
+    {
+      "parameters": {
+        "url": "https://huggingface.co/blog/feed.xml",
+        "options": {}
+      },
+      "name": "Hugging Face Blog RSS",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [
+        260,
+        -120
+      ],
+      "id": "6230e233-a199-47e4-869d-6ad86bbcd612"
+    },
+    {
+      "parameters": {
+        "numberInputs": 4
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        960,
+        -140
+      ],
+      "id": "9ed1c072-ccdb-4aa1-9f76-6d69f8345727",
+      "name": "Merge"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        1100,
+        -440
+      ],
+      "id": "dc6b2411-783a-48c4-89fc-79486e8143c9",
+      "name": "Merge2"
+    },
+    {
+      "parameters": {
+        "url": "https://distill.pub/rss.xml",
+        "options": {}
+      },
+      "name": "Distill.pub RSS",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [
+        260,
+        -520
+      ],
+      "id": "c1aec0f1-c4ad-415c-a9b1-e4cb657a5431"
+    },
+    {
+      "parameters": {
+        "amount": 5600,
+        "unit": "hours"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -60,
+        1280
+      ],
+      "id": "df02a2f7-233f-4fad-984e-f5cf126da113",
+      "name": "Wait",
+      "webhookId": "8b63179b-008a-461e-a284-8f52491ef906"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Generate AI Captions & Image Prompts": {
+      "main": [
+        [
+          {
+            "node": "Parse AI Response1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Image 1": {
+      "main": [
+        [
+          {
+            "node": "Merge Generated Images",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Image 2": {
+      "main": [
+        [
+          {
+            "node": "Merge Generated Images",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Generate Image 3": {
+      "main": [
+        [
+          {
+            "node": "Merge Generated Images",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Generate Image 4": {
+      "main": [
+        [
+          {
+            "node": "Merge Generated Images",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Generate Image 5": {
+      "main": [
+        [
+          {
+            "node": "Merge Generated Images",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Combine Content & Images": {
+      "main": [
+        [
+          {
+            "node": "Update Sheet with Content & Images",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update Sheet with Content & Images": {
+      "main": [
+        [
+          {
+            "node": "Send Content Review Email1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Final Content Approval Trigger": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format RSS Data2": {
+      "main": [
+        [
+          {
+            "node": "Read Existing Content2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Existing Content2": {
+      "main": [
+        [
+          {
+            "node": "Write New Content to Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Content Approval Trigger1": {
+      "main": [
+        [
+          {
+            "node": "Generate AI Captions & Image Prompts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse AI Response1": {
+      "main": [
+        [
+          {
+            "node": "Generate Image 1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Generate Image 2",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Generate Image 3",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Generate Image 4",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Generate Image 5",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Combine Content & Images",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Post to Twitter1": {
+      "main": [
+        [
+          {
+            "node": "Final Success Email1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge Generated Images": {
+      "main": [
+        [
+          {
+            "node": "Combine Content & Images",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Post to Reddit1": {
+      "main": [
+        [
+          {
+            "node": "Final Success Email1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Post to LinkedIn1": {
+      "main": [
+        [
+          {
+            "node": "Final Success Email1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge1": {
+      "main": [
+        [
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Arvix AI RSS": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 5
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger - Every 6 Hours1": {
+      "main": [
+        [
+          {
+            "node": "arXiv AI RSS2",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "TechCrunch AI RSS2",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "MIT Tech Review RSS2",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "BAIR Blog RSS2",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Arvix AI RSS",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Towards Data Science RSS",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "ML Mastery RSS",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Distill.pub RSS",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "KDnuggets RSS",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Analytics Vidhya RSS",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Hugging Face Blog RSS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "arXiv AI RSS2": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "TechCrunch AI RSS2": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "MIT Tech Review RSS2": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "BAIR Blog RSS2": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter Last 24 Hours1": {
+      "main": [
+        [
+          {
+            "node": "Format RSS Data2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Write New Content to Sheets": {
+      "main": [
+        [
+          {
+            "node": "Send Review Notification Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Towards Data Science RSS": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 6
+          }
+        ]
+      ]
+    },
+    "ML Mastery RSS": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 7
+          }
+        ]
+      ]
+    },
+    "KDnuggets RSS": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 9
+          }
+        ]
+      ]
+    },
+    "Analytics Vidhya RSS": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Hugging Face Blog RSS": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "Merge2": {
+      "main": [
+        [
+          {
+            "node": "Filter Last 24 Hours1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Distill.pub RSS": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 8
+          }
+        ]
+      ]
+    },
+    "OpenAI Research RSS": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Post to Twitter1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Post to LinkedIn1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Post to Reddit1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "c6867ec8-b571-41a6-b751-458de86183a3",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "63cc00f41701ee5cb09db7150d25d56f6c65bc43e0c04dad0524f1e074177efb"
+  },
+  "id": "yUdE2vHrC1SUbDNj",
+  "tags": []
+}
