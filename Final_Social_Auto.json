@@ -330,8 +330,8 @@
       ],
       "credentials": {
         "openAiApi": {
-          "id": "yZmPkU5wBUyz31iK",
-          "name": "OpenAi account"
+          "id": "dNqR2c1QuYsRZgdz",
+          "name": "Vanshika Eurus"
         }
       }
     },
@@ -365,8 +365,8 @@
       ],
       "credentials": {
         "openAiApi": {
-          "id": "yZmPkU5wBUyz31iK",
-          "name": "OpenAi account"
+          "id": "dNqR2c1QuYsRZgdz",
+          "name": "Vanshika Eurus"
         }
       }
     },
@@ -400,8 +400,8 @@
       ],
       "credentials": {
         "openAiApi": {
-          "id": "yZmPkU5wBUyz31iK",
-          "name": "OpenAi account"
+          "id": "dNqR2c1QuYsRZgdz",
+          "name": "Vanshika Eurus"
         }
       }
     },
@@ -435,8 +435,8 @@
       ],
       "credentials": {
         "openAiApi": {
-          "id": "yZmPkU5wBUyz31iK",
-          "name": "OpenAi account"
+          "id": "dNqR2c1QuYsRZgdz",
+          "name": "Vanshika Eurus"
         }
       }
     },
@@ -470,8 +470,8 @@
       ],
       "credentials": {
         "openAiApi": {
-          "id": "yZmPkU5wBUyz31iK",
-          "name": "OpenAi account"
+          "id": "dNqR2c1QuYsRZgdz",
+          "name": "Vanshika Eurus"
         }
       }
     },
@@ -693,12 +693,13 @@
         },
         "sheetName": {
           "__rl": true,
-          "value": 990562262,
+          "value": "gid=0",
           "mode": "list",
-          "cachedResultName": "Sheet2",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0/edit#gid=990562262"
+          "cachedResultName": "Content_Database",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0/edit#gid=0"
         },
         "event": "rowUpdate",
+        "columnToWatch": "Content_Approval_Status",
         "options": {}
       },
       "id": "f6eb6921-21db-472e-ad06-def99c5afc8a",
@@ -715,6 +716,38 @@
           "name": "Google Sheets Trigger account 2"
         }
       }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "final-approval-check",
+              "leftValue": "={{ $json.Final_Approval_Status }}",
+              "rightValue": "Approved",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "final-approval-conditional-check",
+      "name": "Check Final Approval Status",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        -60,
+        1280
+      ]
     },
     {
       "parameters": {
@@ -1016,6 +1049,7 @@
           "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1iYU4Ei3NX5w_b4t1RBt_yDB2fClNT1cjOpyOxP5pAT0/edit#gid=0"
         },
         "event": "rowUpdate",
+        "columnToWatch": "Content_Approval_Status",
         "options": {}
       },
       "id": "23a474f6-d01c-46aa-b16a-66e5feb73ba5",
@@ -1460,7 +1494,7 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        -60,
+        100,
         1280
       ],
       "id": "df02a2f7-233f-4fad-984e-f5cf126da113",
@@ -1562,7 +1596,7 @@
       "main": [
         [
           {
-            "node": "Wait",
+            "node": "final-approval-conditional-check",
             "type": "main",
             "index": 0
           }
@@ -1595,7 +1629,29 @@
       "main": [
         [
           {
+            "node": "Check Approval Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Approval Status": {
+      "main": [
+        [
+          {
             "node": "Generate AI Captions & Image Prompts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Final Approval Status": {
+      "main": [
+        [
+          {
+            "node": "Wait",
             "type": "main",
             "index": 0
           }
